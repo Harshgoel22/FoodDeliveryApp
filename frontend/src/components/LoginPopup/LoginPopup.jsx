@@ -22,7 +22,7 @@ const LoginPopup = ({ setShowLogin }) => {
 
   const onLogin = async (event) => {
     event.preventDefault();
-    let newUrl = url;
+    let newUrl = "http://localhost:4000";
     if (currentState === "Login") {
       newUrl += "/api/user/login";
     } else {
